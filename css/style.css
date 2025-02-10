@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-1: #36A956;
+    --color-2: #191919;
+    --color-3: #e9f3ea;
+    --color-4: #00A787;
+    --color-5: #fff;
+    --color-6: #27793e;
+    --color-7: #FF943D;
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+/* header */
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.header-cont {
+    background: var(--color-5);
+    padding: 5px 30px;
+    border-radius: 8px;
+}
+
+.logo a img {
+    max-width: 60px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-header {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: var(--color-3) !important;
+    background: var(--color-1);
+    font-weight: normal !important;
+    margin-left: 10px;
+}
+
+.btn-header:hover {
+    text-decoration: none !important;
+    background: var(--color-6);
+    transition: 0.5s;
+}
+
+/* --------------------- */
+
+/* footer */
+
+footer {
+    background: var(--color-4);
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.footer-form h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.footer-form .form-group label {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.footer-form .form-group input[type=text], input[type=email] {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    outline: 0;
+    margin-bottom: 5px;
+}
+
+.footer-form .form-group textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    outline: 0;
+    resize: none;
+}
+
+.footer-form .form-group-btn {
+    margin-top: 10px;
+}
+
+.footer-form .form-group-btn input[type=submit] {
+    width: 100%;
+    height: 35px;
+    background: var(--color-2);
+    color: var(--color-5);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.acesso-rapido h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.acesso-rapido ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.acesso-rapido ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.acesso-rapido ul li a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.acesso-rapido ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contato h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.footer-contato p {
+    font-size: 14px;
+}
+
+.footer-contato p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    border-top: 1px solid;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* ---------------------- */
+
+@media(max-width: 768px) {
+
+    /* header */
+
+    .menu {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: block;
+        padding: 5px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        background: var(--color-5);
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px; 
+        position: absolute;
+        top: 90%;
+        width: 96%;
+    }
+
+    .menu-mobile ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .menu-mobile ul li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-mobile ul li a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        text-decoration: none;
+        color: var(--color-2);
+    }
+
+    /* ---------------------------- */
+
+    /* footer */
+
+    .footer-cont {
+        flex-direction: column;
+    }
+
+    .footer-form, .acesso-rapido, .footer-contato {
+        width: 100%;
+    }
+
+    .acesso-rapido {
+        margin: 40px 0;
+    }
+
+    .footer-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ----------------------------- */
+
+}
